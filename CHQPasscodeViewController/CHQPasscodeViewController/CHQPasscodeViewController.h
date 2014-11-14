@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CHQPasscodeViewController.h
 //  CHQPasscodeViewController
 //
 //  Created by 陈鸿强 on 11/14/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CHQPasscodeViewController : UIViewController
 
 @end
-

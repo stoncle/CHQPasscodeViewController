@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CHQPasscodeViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    self.window.backgroundColor = [UIColor blackColor];
+    
+    CHQPasscodeViewController *demoController = [[CHQPasscodeViewController alloc] init];
+    demoController.title = nil;
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: demoController];
+    //	UITabBarController *navController = [[UITabBarController alloc] init];
+    //	[navController addChildViewController: demoController];
+    self.window.rootViewController = navController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

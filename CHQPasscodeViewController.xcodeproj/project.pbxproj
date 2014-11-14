@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		F986A0491A15E54900F6B377 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F986A0481A15E54900F6B377 /* main.m */; };
 		F986A04C1A15E54900F6B377 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F986A04B1A15E54900F6B377 /* AppDelegate.m */; };
-		F986A04F1A15E54900F6B377 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F986A04E1A15E54900F6B377 /* ViewController.m */; };
-		F986A0521A15E54900F6B377 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F986A0501A15E54900F6B377 /* Main.storyboard */; };
 		F986A0541A15E54900F6B377 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F986A0531A15E54900F6B377 /* Images.xcassets */; };
 		F986A0571A15E54900F6B377 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F986A0551A15E54900F6B377 /* LaunchScreen.xib */; };
 		F986A0631A15E54900F6B377 /* CHQPasscodeViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F986A0621A15E54900F6B377 /* CHQPasscodeViewControllerTests.m */; };
+		F986A06F1A15E9DE00F6B377 /* CHQPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F986A06E1A15E9DE00F6B377 /* CHQPasscodeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +31,13 @@
 		F986A0481A15E54900F6B377 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F986A04A1A15E54900F6B377 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F986A04B1A15E54900F6B377 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F986A04D1A15E54900F6B377 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F986A04E1A15E54900F6B377 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F986A0511A15E54900F6B377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F986A0531A15E54900F6B377 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F986A0561A15E54900F6B377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F986A05C1A15E54900F6B377 /* CHQPasscodeViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CHQPasscodeViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F986A0611A15E54900F6B377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F986A0621A15E54900F6B377 /* CHQPasscodeViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHQPasscodeViewControllerTests.m; sourceTree = "<group>"; };
+		F986A06D1A15E9DE00F6B377 /* CHQPasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHQPasscodeViewController.h; sourceTree = "<group>"; };
+		F986A06E1A15E9DE00F6B377 /* CHQPasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHQPasscodeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +79,9 @@
 		F986A0451A15E54900F6B377 /* CHQPasscodeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F986A06C1A15E9BE00F6B377 /* CHQPasscodeViewController */,
 				F986A04A1A15E54900F6B377 /* AppDelegate.h */,
 				F986A04B1A15E54900F6B377 /* AppDelegate.m */,
-				F986A04D1A15E54900F6B377 /* ViewController.h */,
-				F986A04E1A15E54900F6B377 /* ViewController.m */,
-				F986A0501A15E54900F6B377 /* Main.storyboard */,
 				F986A0531A15E54900F6B377 /* Images.xcassets */,
 				F986A0551A15E54900F6B377 /* LaunchScreen.xib */,
 				F986A0461A15E54900F6B377 /* Supporting Files */,
@@ -117,6 +113,31 @@
 				F986A0611A15E54900F6B377 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F986A06C1A15E9BE00F6B377 /* CHQPasscodeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F986A0701A15EAD800F6B377 /* CHQPasscodeView */,
+				F986A0711A15EAD800F6B377 /* CHQPasscodeViewConfigurator */,
+				F986A06D1A15E9DE00F6B377 /* CHQPasscodeViewController.h */,
+				F986A06E1A15E9DE00F6B377 /* CHQPasscodeViewController.m */,
+			);
+			path = CHQPasscodeViewController;
+			sourceTree = "<group>";
+		};
+		F986A0701A15EAD800F6B377 /* CHQPasscodeView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CHQPasscodeView;
+			sourceTree = "<group>";
+		};
+		F986A0711A15EAD800F6B377 /* CHQPasscodeViewConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CHQPasscodeViewConfigurator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +220,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F986A0521A15E54900F6B377 /* Main.storyboard in Resources */,
 				F986A0571A15E54900F6B377 /* LaunchScreen.xib in Resources */,
 				F986A0541A15E54900F6B377 /* Images.xcassets in Resources */,
 			);
@@ -219,7 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F986A04F1A15E54900F6B377 /* ViewController.m in Sources */,
+				F986A06F1A15E9DE00F6B377 /* CHQPasscodeViewController.m in Sources */,
 				F986A04C1A15E54900F6B377 /* AppDelegate.m in Sources */,
 				F986A0491A15E54900F6B377 /* main.m in Sources */,
 			);
@@ -244,14 +264,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F986A0501A15E54900F6B377 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F986A0511A15E54900F6B377 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F986A0551A15E54900F6B377 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
