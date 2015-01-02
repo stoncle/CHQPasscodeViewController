@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "CHQPasscodeViewController.h"
-
+#import "LTHDemoViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -21,8 +20,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor blackColor];
-    
-    CHQPasscodeViewController *demoController = [[CHQPasscodeViewController alloc] init];
+    LTHDemoViewController *demoController = [[LTHDemoViewController alloc]init];
     demoController.title = nil;
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: demoController];
     //	UITabBarController *navController = [[UITabBarController alloc] init];
