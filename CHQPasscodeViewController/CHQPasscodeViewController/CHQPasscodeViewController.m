@@ -59,7 +59,9 @@ options:NSNumericSearch] != NSOrderedAscending)
 @property (nonatomic, assign) BOOL        usesKeychain;
 @property (nonatomic, assign) BOOL        isUsingNavbar;
 @property (nonatomic, assign) BOOL        timerStartInSeconds;
-
+#if !(TARGET_IPHONE_SIMULATOR)
+@property (nonatomic, strong) LAContext   *context;
+#endif
 @end
 
 @implementation CHQPasscodeViewController
