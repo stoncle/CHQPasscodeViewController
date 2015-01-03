@@ -345,8 +345,8 @@ options:NSNumericSearch] != NSOrderedAscending)
     _animatingView = [[UIView alloc] initWithFrame: self.view.frame];
     [self.view addSubview: _animatingView];
     
-    [self _setupViews];
     [self _setupLabels];
+    [self _setupViews];
     
     [self.view setNeedsUpdateConstraints];
 }
@@ -513,22 +513,7 @@ options:NSNumericSearch] != NSOrderedAscending)
     _coverView.tag = _coverViewTag;
     _coverView.hidden = YES;
     [[UIApplication sharedApplication].keyWindow addSubview: _coverView];
-    switch (_currentLockType) {
-        case CHQLockTypeDigit:
-            _passcodeView = [[CHQDigitPasscodeView alloc]initWithViewController:self];
-            break;
-        case CHQLockTypeCharacter:
-            _passcodeView = [[CHQCharacterPasscodeView alloc]initWithViewController:self];
-            break;
-        case CHQLockTypeGesture:
-            _passcodeView = [[CHQGesturePasscodeView alloc]initWithViewController:self];
-            break;
-        default:
-            break;
-    }
-//    _passcodeView = [[CHQGesturePasscodeView alloc]initWithViewController:self];
-    _passcodeView.delegate = self;
-    [_animatingView addSubview:_passcodeView];
+    [self _changePasscodeViewToAimLockType:_currentLockType];
 }
 
 
@@ -902,7 +887,10 @@ options:NSNumericSearch] != NSOrderedAscending)
 }
 - (void)_changePasscodeViewToAimLockType:(CHQLockType)lockType
 {
-    [_passcodeView removeFromSuperview];
+    if(_passcodeView)
+    {
+        [_passcodeView removeFromSuperview];
+    }
     switch (lockType) {
         case CHQLockTypeDigit:
             _passcodeView = [[CHQDigitPasscodeView alloc]initWithViewController:self];
@@ -918,10 +906,14 @@ options:NSNumericSearch] != NSOrderedAscending)
             break;
     }
     [_animatingView addSubview:_passcodeView];
+    
+    if(_isUserSwitchingBetweenPasscodeModes)
+    {
+        _passcodeView.alpha = 0;
+    }
     [self.view setNeedsUpdateConstraints];
     [self.view updateConstraintsIfNeeded];
     _passcodeView.delegate = self;
-    _passcodeView.alpha = 0;
 }
 
 #pragma mark - Actions

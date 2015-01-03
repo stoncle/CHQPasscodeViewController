@@ -248,11 +248,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CHQPasscodeViewController/CHQPasscodeViewController/CHQPasscodeViewController.m"
-            timestampString = "441895751.35089"
+            timestampString = "441948783.436423"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "889"
-            endingLineNumber = "889"
+            startingLineNumber = "892"
+            endingLineNumber = "892"
             landmarkName = "-validatePasscode:"
             landmarkType = "5">
          </BreakpointContent>
@@ -264,11 +264,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CHQPasscodeViewController/CHQPasscodeViewController/CHQPasscodeViewController.m"
-            timestampString = "441895751.35089"
+            timestampString = "441948783.436423"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "901"
-            endingLineNumber = "901"
+            startingLineNumber = "904"
+            endingLineNumber = "904"
             landmarkName = "-_changePasscodeViewToAimLockType:"
             landmarkType = "5">
          </BreakpointContent>
@@ -280,11 +280,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CHQPasscodeViewController/CHQPasscodeViewController/CHQPasscodeViewController.m"
-            timestampString = "441895751.35089"
+            timestampString = "441948783.436423"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "412"
-            endingLineNumber = "412"
+            startingLineNumber = "414"
+            endingLineNumber = "414"
             landmarkName = "-_cancelAndDismissMe"
             landmarkType = "5">
          </BreakpointContent>
@@ -296,11 +296,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CHQPasscodeViewController/CHQPasscodeViewController/CHQPasscodeViewController.m"
-            timestampString = "441895751.35089"
+            timestampString = "441948783.436423"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "415"
-            endingLineNumber = "415"
+            startingLineNumber = "417"
+            endingLineNumber = "417"
             landmarkName = "-_cancelAndDismissMe"
             landmarkType = "5">
          </BreakpointContent>
@@ -312,11 +312,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CHQPasscodeViewController/CHQPasscodeViewController/CHQPasscodeViewController.m"
-            timestampString = "441895751.35089"
+            timestampString = "441948783.436423"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "862"
-            endingLineNumber = "862"
+            startingLineNumber = "865"
+            endingLineNumber = "865"
             landmarkName = "-validatePasscode:"
             landmarkType = "5">
          </BreakpointContent>
@@ -328,11 +328,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CHQPasscodeViewController/CHQPasscodeViewController/CHQPasscodeViewController.m"
-            timestampString = "441895751.35089"
+            timestampString = "441948783.436423"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "466"
-            endingLineNumber = "466"
+            startingLineNumber = "468"
+            endingLineNumber = "468"
             landmarkName = "-_dismissMe"
             landmarkType = "5">
          </BreakpointContent>
@@ -344,11 +344,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CHQPasscodeViewController/CHQPasscodeViewController/CHQPasscodeViewController.m"
-            timestampString = "441895751.35089"
+            timestampString = "441948783.436423"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "860"
-            endingLineNumber = "860"
+            startingLineNumber = "863"
+            endingLineNumber = "863"
             landmarkName = "-validatePasscode:"
             landmarkType = "5">
          </BreakpointContent>
@@ -376,11 +376,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CHQPasscodeViewController/CHQPasscodeViewController/CHQPasscodeViewController.m"
-            timestampString = "441895751.35089"
+            timestampString = "441948783.436423"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "-_saveLockType:"
             landmarkType = "5">
          </BreakpointContent>
@@ -392,11 +392,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CHQPasscodeViewController/CHQPasscodeViewController/CHQPasscodeViewController.m"
-            timestampString = "441895751.35089"
+            timestampString = "441948783.436423"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "-_currentLockType"
             landmarkType = "5">
          </BreakpointContent>
@@ -408,12 +408,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CHQPasscodeViewController/CHQPasscodeViewController/CHQPasscodeViewController.m"
-            timestampString = "441895751.35089"
+            timestampString = "441948783.436423"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "559"
-            endingLineNumber = "559"
+            startingLineNumber = "562"
+            endingLineNumber = "562"
             landmarkName = "-updateViewConstraints"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CHQPasscodeViewController/CHQPasscodeViewController/CHQPasscodeViewController.m"
+            timestampString = "441948871.06347"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "906"
+            endingLineNumber = "906"
+            landmarkName = "-_changePasscodeViewToAimLockType:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CHQPasscodeViewController/CHQPasscodeViewController/CHQPasscodeViewController.m"
+            timestampString = "441948981.204416"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "577"
+            endingLineNumber = "577"
+            landmarkName = "-updateViewConstraints"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CHQPasscodeViewController/CHQPasscodeViewController/CHQPasscodeViewController.m"
+            timestampString = "441949005.129436"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "578"
+            endingLineNumber = "578"
+            landmarkName = "-updateViewConstraints"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CHQPasscodeViewController/CHQPasscodeViewController/CHQPasscodeViewController.m"
+            timestampString = "441949290.454531"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1028"
+            endingLineNumber = "1028"
+            landmarkName = "-_resetUI"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
