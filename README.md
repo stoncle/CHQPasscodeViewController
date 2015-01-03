@@ -62,9 +62,9 @@ implement some protocol methods to track the passcode view:
 ```
 #SUPPORTING PASSCODE TYPE FOR NOW
 this library support 3 passcode type currently, they are Digit, Character and Gesture.
-![Screenshot](https://github.com/stoncle/CHQPasscodeViewController/image/digit.png)
-![Screenshot](https://github.com/stoncle/CHQPasscodeViewController/image/character.png)
-![Screenshot](https://github.com/stoncle/CHQPasscodeViewController/image/gesture.png)
+![Screenshot](https://github.com/stoncle/CHQPasscodeViewController/blob/master/image/digit.png)
+![Screenshot](https://github.com/stoncle/CHQPasscodeViewController/blob/master/image/character.png)
+![Screenshot](https://github.com/stoncle/CHQPasscodeViewController/blob/master/image/gesture.png)
 
 #CUSTOMISATION
 ###you can create your own personalized passcode view!
