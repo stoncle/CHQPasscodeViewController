@@ -361,6 +361,8 @@ options:NSNumericSearch] != NSOrderedAscending)
 //        [_passcodeTextField becomeFirstResponder];
     }
     [self addRotationObservers];
+    [self.view setNeedsUpdateConstraints];
+    [self.view updateConstraintsIfNeeded];
 }
 
 - (void)addRotationObservers
@@ -438,6 +440,14 @@ options:NSNumericSearch] != NSOrderedAscending)
         }
         [self.navigationController popViewControllerAnimated:YES];
     }
+    [[NSNotificationCenter defaultCenter]
+     removeObserver: self
+     name: UIApplicationDidChangeStatusBarOrientationNotification
+     object: nil];
+    [[NSNotificationCenter defaultCenter]
+     removeObserver: self
+     name: UIApplicationDidChangeStatusBarFrameNotification
+     object: nil];
 }
 
 
