@@ -16,6 +16,7 @@
 #if !(TARGET_IPHONE_SIMULATOR)
 #import <LocalAuthentication/LocalAuthentication.h>
 #endif
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 #define kUserDefaultCurrentLockTypeKey @"currentLockType"
 #define DegreesToRadians(x) ((x) * M_PI / 180.0)
 #define LTHiOS8 ([[[UIDevice currentDevice] systemVersion] compare:@"8.0" \
@@ -359,6 +360,21 @@ options:NSNumericSearch] != NSOrderedAscending)
         [_passcodeView anythingBecomeFirstResponder];
 //        [_passcodeTextField becomeFirstResponder];
     }
+    [self addRotationObservers];
+}
+
+- (void)addRotationObservers
+{
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(statusBarFrameOrOrientationChanged:)
+     name:UIApplicationDidChangeStatusBarOrientationNotification
+     object:nil];
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(statusBarFrameOrOrientationChanged:)
+     name:UIApplicationDidChangeStatusBarFrameNotification
+     object:nil];
 }
 
 
@@ -1305,16 +1321,6 @@ options:NSNumericSearch] != NSOrderedAscending)
      selector: @selector(_applicationWillEnterForeground)
      name: UIApplicationWillEnterForegroundNotification
      object: nil];
-    [[NSNotificationCenter defaultCenter]
-     addObserver:self
-     selector:@selector(statusBarFrameOrOrientationChanged:)
-     name:UIApplicationDidChangeStatusBarOrientationNotification
-     object:nil];
-    [[NSNotificationCenter defaultCenter]
-     addObserver:self
-     selector:@selector(statusBarFrameOrOrientationChanged:)
-     name:UIApplicationDidChangeStatusBarFrameNotification
-     object:nil];
 }
 
 
@@ -1322,6 +1328,7 @@ options:NSNumericSearch] != NSOrderedAscending)
 - (NSUInteger)supportedInterfaceOrientations {
     if (_displayedAsLockScreen)
         return LTHiOS8 ? UIInterfaceOrientationMaskPortrait : UIInterfaceOrientationMaskAll;
+//        return IS_IPHONE ? UIInterfaceOrientationMaskPortrait : UIInterfaceOrientationMaskAll;
     // I'll be honest and mention I have no idea why this line of code below works.
     // Without it, if you present the passcode view as lockscreen (directly on the window)
     // and then inside of a modal, the orientation will be wrong.
